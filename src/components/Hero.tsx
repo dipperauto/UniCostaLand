@@ -49,15 +49,6 @@ const Hero: React.FC = () => {
                 </a>
               </div>
             </Reveal>
-            <Reveal delay={300}>
-              <div className="flex items-center gap-6 pt-2 text-sm text-slate-400">
-                <div className="flex -space-x-2">
-                  <img src="/logo-unicosta.png" alt="UniCosta" className="h-8 w-8 rounded-full border border-slate-700 bg-[#0b1220]" />
-                  <img src="/placeholder.svg" alt="Placeholder" className="h-8 w-8 rounded-full border border-slate-700 bg-[#0b1220]" />
-                </div>
-                <span>Atendimento em Manaus/AM e consultoria digital</span>
-              </div>
-            </Reveal>
           </div>
 
           <Reveal delay={150}>
