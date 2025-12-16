@@ -9,8 +9,8 @@ const Hero: React.FC = () => {
   return (
     <section className="relative pt-24 md:pt-28 bg-gradient-to-b from-[#0a0f1f] via-[#0b1228] to-[#0c1a36] overflow-hidden">
       {/* Mar de '$' interativo no fundo */}
-      <InteractiveDollarField className="absolute inset-0 -z-10 opacity-80" />
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <InteractiveDollarField className="absolute inset-0 z-0 opacity-80" />
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <Reveal>

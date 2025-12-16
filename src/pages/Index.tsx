@@ -18,7 +18,7 @@ const Index: React.FC = () => {
       </div>
       <BackgroundRain />
       <Header />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <Services />
         <Differentials />
