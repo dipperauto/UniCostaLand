@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
           </div>
 
           <Reveal delay={150}>
-            <div className="relative flex justify-center">
+            <div className="relative flex justify-center md:justify-end">
               <div className="w-full max-w-[300px] md:max-w-[360px] aspect-square rounded-xl bg-[#0e162a] shadow-xl md:shadow-2xl shadow-black/40 border border-slate-800 overflow-hidden">
                 <img
                   src="/unicosta-hero.jpeg"
