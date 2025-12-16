@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             </Reveal>
             <Reveal delay={200}>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-500 text-white">
+                <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                   <a href="https://wa.me/92991825422" target="_blank" rel="noreferrer">
                     Solicitar orçamento
                   </a>
@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Conversar no WhatsApp"
-                  className="inline-flex items-center justify-center h-12 w-12 rounded-full border border-slate-700 text-slate-100 hover:bg-white/5 transition-colors"
+                  className="inline-flex items-center justify-center h-12 w-12 rounded-full border border-border text-foreground hover:bg-foreground/5 transition-colors"
                 >
                   <svg
                     viewBox="0 0 32 32"
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
                     className="h-6 w-6"
                     fill="currentColor"
                   >
-                    <path d="M19.11 17.35a4.87 4.87 0 0 1-2.06-.46c-.63-.28-1.37-.91-1.83-1.41-.62-.66-1.56-2.06-1.56-2.93 0-1.24.67-1.84 1.22-2.09.3-.14.68-.1.86.21.22.38.69 1.29.76 1.4.12.2.08.46-.1.62-.12.1-.29.25-.4.35-.12.1-.25.21-.11.44.14.24.62 1.02 1.33 1.66.92.83 1.68 1.08 1.95 1.19.23.09.37.08.5-.07.13-.15.58-.68.74-.92.16-.24.33-.2.55-.12.23.09 1.45.68 1.7.8.25.12.41.19.47.3.06.11.06.65-.15 1.28-.21.63-1.04 1.1-1.58 1.14-.54.04-1.22.04-1.39.04ZM16 28c-1.96 0-3.83-.5-5.48-1.45l-3.62.95.97-3.53A12.01 12.01 0 1 1 28 16c0 6.62-5.38 12-12 12Zm0-21.6A9.6 9.6 0 1 0 25.6 16 9.61 9.61 0 0 0 16 6.4Z" />
+                    <path d="M19.11 17.35a4.87 4.87 0 0 1-2.06-.46c-.63-.28-1.37-.91-1.83-1.41-.62-.66-1.56-2.06-1.56-2.93 0-1.24.67-1.84 1.22-2.09.3-.14.68-.1.86.21.22.38.69 1.29.76 1.4.12.2.08.46-.1.62-.12.1-.29.25-.4.35-.12.1-.25.21-.11.44.14.24.62 1.02 1.33 1.66.92.83 1.68 1.08 1.95 1.19.23.09.37.08.5-.07.13-.15.58-.68.74-.92.16-.24.33-.2.55-.12.23.09 1.45.68 1.7.8.25.12.41.19.47.3.06.11.06.65-.15 1.28-.21.63-1.04 1.1-1.58 1.14-.54.04-1.22.04-1.39.04Z" />
                   </svg>
                 </a>
               </div>
@@ -58,14 +58,14 @@ const Hero: React.FC = () => {
 
           <Reveal delay={150}>
             <div className="relative flex justify-center">
-              <div className="w-full max-w-[300px] md:max-w-[360px] aspect-square rounded-xl bg-[#0e162a] shadow-sm border border-slate-800 overflow-hidden">
+              <div className="w-full max-w-[280px] md:max-w-[340px] aspect-square rounded-xl bg-card shadow-sm border border-border overflow-hidden">
                 <img
                   src="/unicosta-hero.jpeg"
                   alt="Marca UniCosta"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="pointer-events-none absolute -inset-6 -z-10 rounded-2xl bg-blue-500/10 blur-3xl"></div>
+              <div className="pointer-events-none absolute -inset-6 -z-10 rounded-2xl bg-primary/10 blur-3xl"></div>
             </div>
           </Reveal>
         </div>
