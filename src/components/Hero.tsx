@@ -55,9 +55,9 @@ const Hero: React.FC = () => {
             <div className="relative">
               <div className="aspect-[4/3] rounded-xl bg-[#0e162a] shadow-sm border border-slate-800 overflow-hidden">
                 <img
-                  src="/logo-unicosta.png"
+                  src="/unicosta-hero.jpeg"
                   alt="Marca UniCosta"
-                  className="object-contain w-full h-full p-8"
+                  className="object-contain w-full h-full p-6"
                 />
               </div>
               <div className="pointer-events-none absolute -inset-6 -z-10 rounded-2xl bg-blue-500/10 blur-3xl"></div>
