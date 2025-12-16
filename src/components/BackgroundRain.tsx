@@ -25,7 +25,7 @@ const BackgroundRain: React.FC = () => {
   const [drops] = React.useState<Drop[]>(() => generateDrops(34));
 
   return (
-    <div className="money-rain-container pointer-events-none absolute inset-0 z-0 overflow-hidden">
+    <div className="money-rain-container pointer-events-none fixed inset-0 z-0 overflow-hidden">
       {drops.map((d, i) => (
         <span
           key={i}
