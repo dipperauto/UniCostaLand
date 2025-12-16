@@ -5,7 +5,7 @@ import Reveal from "./Reveal";
 
 const About: React.FC = () => {
   return (
-    <section id="sobre" className="py-16 bg-gradient-to-b from-[#0b142a] to-transparent">
+    <section id="sobre" className="py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <Reveal>

@@ -13,7 +13,7 @@ const points = [
 
 const Differentials: React.FC = () => {
   return (
-    <section id="diferenciais" className="py-16 bg-gradient-to-b from-transparent to-[#0b142a]">
+    <section id="diferenciais" className="py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <Reveal>

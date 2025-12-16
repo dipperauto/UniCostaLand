@@ -7,7 +7,7 @@ import Reveal from "./Reveal";
 
 const Contact: React.FC = () => {
   return (
-    <section id="contato" className="py-16 bg-gradient-to-b from-transparent to-[#0b142a]">
+    <section id="contato" className="py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <Reveal>
           <div className="rounded-2xl border border-slate-800 p-8 bg-[#0e162a]">
