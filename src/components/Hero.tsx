@@ -15,8 +15,6 @@ const Hero: React.FC = () => {
       >
         <InteractiveDollarField className="absolute inset-0 opacity-80" />
       </div>
-      {/* Extensão do gradiente para suavizar a transição com a próxima seção */}
-      <div className="absolute inset-x-0 bottom-[-30vh] h-[30vh] z-0 bg-gradient-to-b from-[#0c1a36] to-transparent" />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
