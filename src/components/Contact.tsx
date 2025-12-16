@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
                       Conversar no WhatsApp
                     </a>
                   </Button>
-                  <Button asChild variant="outline" className="border-slate-700 text-slate-100 hover:bg-white/5">
+                  <Button asChild variant="outline" className="border-slate-700 text-slate-100 bg-transparent hover:bg-white/10">
                     <a href="https://instagram.com/unicostacontabilidade" target="_blank" rel="noreferrer">
                       Ver Instagram
                     </a>

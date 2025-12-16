@@ -46,7 +46,7 @@ const Header: React.FC = () => {
               <Phone className="h-4 w-4" />
               (92) 99182-5422
             </a>
-            <Button asChild variant="outline" size="sm" className="ml-2 border-slate-700 text-slate-100 hover:bg-white/5">
+            <Button asChild variant="outline" size="sm" className="ml-2 border-slate-700 text-slate-100 bg-transparent hover:bg-white/10">
               <a href="https://app.unicosta.com.br" target="_blank" rel="noreferrer">
                 UniCosta Hub
               </a>
