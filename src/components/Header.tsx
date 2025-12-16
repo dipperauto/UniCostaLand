@@ -15,9 +15,6 @@ const Header: React.FC = () => {
               alt="UniCosta Contabilidade - Logo"
               className="h-8 w-auto"
             />
-            <span className="hidden sm:block font-semibold tracking-wide text-slate-100">
-              UniCosta Contabilidade
-            </span>
           </a>
 
           <nav className="hidden md:flex items-center gap-6 text-sm">
