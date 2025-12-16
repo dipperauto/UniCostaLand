@@ -18,7 +18,7 @@ const Differentials: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <Reveal>
             <div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
+              <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6">
                 Por que escolher a UniCosta?
               </h2>
               <ul className="space-y-4">
@@ -26,10 +26,10 @@ const Differentials: React.FC = () => {
                   const Icon = p.icon;
                   return (
                     <li key={p.text} className="flex items-start gap-3">
-                      <span className="mt-1 text-primary">
+                      <span className="mt-1 text-sky-400">
                         <Icon className="h-5 w-5" />
                       </span>
-                      <span className="text-muted-foreground">{p.text}</span>
+                      <span className="text-slate-300">{p.text}</span>
                     </li>
                   );
                 })}
@@ -37,14 +37,14 @@ const Differentials: React.FC = () => {
             </div>
           </Reveal>
           <Reveal delay={150}>
-            <div className="rounded-xl border border-border bg-card p-6">
-              <p className="text-muted-foreground">
+            <div className="rounded-xl border border-slate-800 bg-[#0e162a] p-6">
+              <p className="text-slate-300">
                 Com atuação em Manaus/AM, ajudamos empresas a crescer com segurança por meio de uma contabilidade
                 moderna e acessível. Nosso compromisso é simplificar a burocracia para você focar no seu negócio.
               </p>
               <div className="mt-6 flex flex-wrap gap-3 items-center">
                 <img src="/logo-unicosta.png" alt="UniCosta" className="h-10 w-auto" />
-                <span className="text-sm text-muted-foreground">Clientes satisfeitos e atendimento ágil.</span>
+                <span className="text-sm text-slate-400">Clientes satisfeitos e atendimento ágil.</span>
               </div>
             </div>
           </Reveal>
