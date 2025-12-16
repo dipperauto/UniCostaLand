@@ -18,6 +18,19 @@ const Footer: React.FC = () => {
             <a href="#contato" className="text-slate-300 hover:text-white transition-colors">Contato</a>
           </nav>
         </div>
+
+        <div className="mt-6 grid md:grid-cols-2 gap-4 text-xs text-slate-400">
+          <div className="space-y-1">
+            <p>Razão social: Unicosta Contabilidade Ltda</p>
+            <p>CNPJ: 36.038.072/0001-75</p>
+            <p>Fundada em: 17/01/2020</p>
+          </div>
+          <div className="space-y-1">
+            <p>Endereço: Rua Santo Antonio, 718 - Santo Antonio, Manaus - AM, 69.029-230</p>
+            <p>Atividade principal: Atividades de contabilidade (CNAE 6920-6/01)</p>
+          </div>
+        </div>
+
         <div className="mt-6 text-xs text-slate-500">
           © {new Date().getFullYear()} UniCosta Contabilidade. Todos os direitos reservados.
         </div>

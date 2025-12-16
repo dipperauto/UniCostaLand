@@ -99,3 +99,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Money rain animation - sutil e minimalista */
+@keyframes money-fall {
+  0% {
+    transform: translate3d(0, -110%, 0);
+  }
+  100% {
+    transform: translate3d(0, 120%, 0);
+  }
+}
+
+.money-rain-container .money-drop {
+  position: absolute;
+  top: -10%;
+  color: rgb(125 211 252 / 0.12); /* sky-300 com baixa opacidade */
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.08); /* brilho sutil */
+  filter: blur(0.2px);
+  animation-name: money-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
