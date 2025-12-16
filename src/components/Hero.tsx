@@ -7,9 +7,16 @@ import InteractiveDollarField from "./InteractiveDollarField";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-24 md:pt-28 bg-gradient-to-b from-[#0a0f1f] via-[#0b1228] to-[#0c1a36] overflow-hidden">
-      {/* Mar de '$' interativo no fundo */}
-      <InteractiveDollarField className="absolute inset-0 z-0 opacity-80" />
+    <section className="relative pt-24 md:pt-28 bg-gradient-to-b from-[#0a0f1f] via-[#0b1228] to-[#0c1a36] overflow-visible">
+      {/* Mar de '$' interativo no fundo, estendido 30vh para baixo */}
+      <div
+        className="absolute inset-x-0 top-0 z-0 pointer-events-none"
+        style={{ height: "calc(100% + 30vh)" }}
+      >
+        <InteractiveDollarField className="absolute inset-0 opacity-80" />
+      </div>
+      {/* Extensão do gradiente para suavizar a transição com a próxima seção */}
+      <div className="absolute inset-x-0 bottom-[-30vh] h-[30vh] z-0 bg-gradient-to-b from-[#0c1a36] to-transparent" />
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
