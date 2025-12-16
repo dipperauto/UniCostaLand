@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <Reveal>
-              <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-white">
+              <h1 className="text-3xl md:text-5xl font-semibold tracking-tight leading-tight text-white">
                 Contabilidade que impulsiona o seu negócio
               </h1>
             </Reveal>
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             </Reveal>
             <Reveal delay={200}>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-cyan-600 hover:bg-cyan-500 text-white">
+                <Button asChild size="lg" className="w-full sm:w-auto bg-cyan-600 hover:bg-cyan-500 text-white">
                   <a href="https://wa.me/92991825422" target="_blank" rel="noreferrer">
                     Solicitar orçamento
                   </a>
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
 
           <Reveal delay={150}>
             <div className="relative flex justify-center md:justify-end">
-              <div className="w-full max-w-[300px] md:max-w-[360px] aspect-square rounded-xl bg-[#0e162a] shadow-xl md:shadow-2xl shadow-black/40 border border-slate-800 overflow-hidden">
+              <div className="w-full max-w-[240px] sm:max-w-[300px] md:max-w-[360px] aspect-square rounded-xl bg-[#0e162a] shadow-xl md:shadow-2xl shadow-black/40 border border-slate-800 overflow-hidden">
                 <img
                   src="/unicosta-hero.jpeg"
                   alt="Marca UniCosta"

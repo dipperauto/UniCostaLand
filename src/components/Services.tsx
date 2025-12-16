@@ -40,7 +40,7 @@ const items = [
 
 const Services: React.FC = () => {
   return (
-    <section id="servicos" className="py-16 md:py-20 bg-transparent">
+    <section id="servicos" className="py-14 md:py-20 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-end justify-between mb-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-white">Serviços</h2>
@@ -53,12 +53,12 @@ const Services: React.FC = () => {
             Falar com especialista
           </a>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {items.map((it, idx) => {
             const Icon = it.icon;
             return (
               <Reveal key={it.title} delay={idx * 80}>
-                <Card className="border-slate-800 bg-[#0e162a] hover:border-slate-700 hover:shadow-[0_0_0_1px_rgba(34,211,238,0.4)] transition-all group">
+                <Card className="border-slate-800 bg-[#0e162a] hover:border-slate-700 hover:shadow-[0_0_0_1px_rgba(34,211,238,0.4)] transition-all group hover:translate-y-[1px]">
                   <CardHeader className="flex flex-row items-center gap-3">
                     <div className="p-2 rounded-md bg-cyan-900/30 text-cyan-400">
                       <Icon className="h-5 w-5" />

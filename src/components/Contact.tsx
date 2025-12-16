@@ -7,7 +7,7 @@ import Reveal from "./Reveal";
 
 const Contact: React.FC = () => {
   return (
-    <section id="contato" className="py-16 bg-transparent">
+    <section id="contato" className="py-14 md:py-16 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <Reveal>
           <div className="rounded-2xl border border-slate-800 p-8 bg-[#0e162a]">
@@ -18,12 +18,12 @@ const Contact: React.FC = () => {
                   Fale com nossa equipe e receba um atendimento consultivo. Vamos entender a necessidade do seu negócio e indicar o melhor caminho.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Button asChild className="bg-cyan-600 hover:bg-cyan-500 text-white">
+                  <Button asChild className="w-full sm:w-auto bg-cyan-600 hover:bg-cyan-500 text-white">
                     <a href="https://wa.me/92991825422" target="_blank" rel="noreferrer">
                       Conversar no WhatsApp
                     </a>
                   </Button>
-                  <Button asChild variant="outline" className="border-slate-700 text-slate-100 bg-transparent hover:bg-white/10">
+                  <Button asChild variant="outline" className="w-full sm:w-auto border-slate-700 text-slate-100 bg-transparent hover:bg-white/10">
                     <a href="https://instagram.com/unicostacontabilidade" target="_blank" rel="noreferrer">
                       Ver Instagram
                     </a>

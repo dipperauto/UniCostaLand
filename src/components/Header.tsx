@@ -2,7 +2,8 @@
 
 import React from "react";
 import { Button } from "./ui/button";
-import { Instagram, Phone, MapPin } from "lucide-react";
+import { Instagram, Phone, MapPin, Menu } from "lucide-react";
+import { Sheet, SheetTrigger, SheetContent } from "./ui/sheet";
 
 const Header: React.FC = () => {
   return (
@@ -24,7 +25,8 @@ const Header: React.FC = () => {
             <a href="#contato" className="text-slate-300 hover:text-white transition-colors">Contato</a>
           </nav>
 
-          <div className="flex items-center gap-2">
+          {/* Desktop actions */}
+          <div className="hidden md:flex items-center gap-2">
             <a
               href="https://instagram.com/unicostacontabilidade"
               target="_blank"
@@ -54,12 +56,59 @@ const Header: React.FC = () => {
               </a>
             </Button>
           </div>
-        </div>
-        <div className="md:hidden flex items-center justify-between pb-3 text-xs text-slate-400">
-          <span className="flex items-center gap-1">
-            <MapPin className="h-3 w-3" /> Manaus/AM
-          </span>
-          <a href="#servicos" className="hover:text-white transition-colors">Ver serviços</a>
+
+          {/* Mobile actions */}
+          <div className="md:hidden flex items-center gap-2">
+            <a
+              href="https://wa.me/92991825422"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-cyan-600 text-white hover:bg-cyan-500"
+            >
+              <Phone className="h-4 w-4" />
+            </a>
+            <Sheet>
+              <SheetTrigger asChild>
+                <button
+                  aria-label="Abrir menu"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-slate-700 text-slate-100 hover:bg-white/5"
+                >
+                  <Menu className="h-5 w-5" />
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="bg-[#0b1220] border-slate-800 text-slate-100">
+                <div className="mt-6 space-y-4">
+                  <a href="#servicos" className="block text-slate-200 hover:text-white">Serviços</a>
+                  <a href="#diferenciais" className="block text-slate-200 hover:text-white">Diferenciais</a>
+                  <a href="#sobre" className="block text-slate-200 hover:text-white">Quem somos</a>
+                  <a href="#contato" className="block text-slate-200 hover:text-white">Contato</a>
+                  <div className="pt-2">
+                    <a
+                      href="https://app.unicosta.com.br"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center w-full h-10 rounded-md border border-slate-700 hover:bg-white/5"
+                    >
+                      UniCosta Hub
+                    </a>
+                  </div>
+                  <a
+                    href="https://wa.me/92991825422"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center justify-center w-full h-10 rounded-md bg-cyan-600 hover:bg-cyan-500 text-white"
+                  >
+                    Falar no WhatsApp
+                  </a>
+                  <div className="text-xs text-slate-400 flex items-center gap-2 pt-2">
+                    <MapPin className="h-3.5 w-3.5" />
+                    Manaus/AM
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
