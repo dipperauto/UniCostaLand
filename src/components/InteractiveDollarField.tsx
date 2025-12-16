@@ -124,7 +124,7 @@ const InteractiveDollarField: React.FC<Props> = ({ className }) => {
 
       // Desenho
       const shimmer = 0.12 + 0.08 * Math.sin(p.phase + t * 0.002);
-      ctx.fillStyle = `rgba(125, 211, 252, ${shimmer})`; // sky-300 em alpha
+      ctx.fillStyle = `rgba(34, 211, 238, ${shimmer})`; // cyan-400 em alpha
       ctx.font = `${p.size}px ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial`;
       ctx.fillText("$", p.x, p.y);
     }

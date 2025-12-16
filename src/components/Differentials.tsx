@@ -26,7 +26,7 @@ const Differentials: React.FC = () => {
                   const Icon = p.icon;
                   return (
                     <li key={p.text} className="flex items-start gap-3">
-                      <span className="mt-1 text-sky-400">
+                      <span className="mt-1 text-cyan-400">
                         <Icon className="h-5 w-5" />
                       </span>
                       <span className="text-slate-300">{p.text}</span>

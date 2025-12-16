@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
             </Reveal>
             <Reveal delay={200}>
               <div className="flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-500 text-white">
+                <Button asChild size="lg" className="bg-cyan-600 hover:bg-cyan-500 text-white">
                   <a href="https://wa.me/92991825422" target="_blank" rel="noreferrer">
                     Solicitar orçamento
                   </a>
@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="pointer-events-none absolute -inset-6 -z-10 rounded-2xl bg-blue-500/10 blur-3xl"></div>
+              <div className="pointer-events-none absolute -inset-6 -z-10 rounded-2xl bg-cyan-400/10 blur-3xl"></div>
             </div>
           </Reveal>
         </div>

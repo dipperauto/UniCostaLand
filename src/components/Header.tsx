@@ -48,7 +48,7 @@ const Header: React.FC = () => {
                 UniCosta Hub
               </a>
             </Button>
-            <Button asChild size="sm" className="bg-blue-600 hover:bg-blue-500 text-white">
+            <Button asChild size="sm" className="bg-cyan-600 hover:bg-cyan-500 text-white">
               <a href="https://wa.me/92991825422" target="_blank" rel="noreferrer">
                 Falar no WhatsApp
               </a>

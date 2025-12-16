@@ -48,7 +48,7 @@ const Services: React.FC = () => {
             href="https://wa.me/92991825422"
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-sky-400 hover:text-sky-300"
+            className="text-sm text-cyan-400 hover:text-cyan-300"
           >
             Falar com especialista
           </a>
@@ -58,9 +58,9 @@ const Services: React.FC = () => {
             const Icon = it.icon;
             return (
               <Reveal key={it.title} delay={idx * 80}>
-                <Card className="border-slate-800 bg-[#0e162a] hover:border-slate-700 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.4)] transition-all group">
+                <Card className="border-slate-800 bg-[#0e162a] hover:border-slate-700 hover:shadow-[0_0_0_1px_rgba(34,211,238,0.4)] transition-all group">
                   <CardHeader className="flex flex-row items-center gap-3">
-                    <div className="p-2 rounded-md bg-blue-900/30 text-sky-400">
+                    <div className="p-2 rounded-md bg-cyan-900/30 text-cyan-400">
                       <Icon className="h-5 w-5" />
                     </div>
                     <CardTitle className="text-lg text-white">{it.title}</CardTitle>

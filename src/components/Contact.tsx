@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
                   Fale com nossa equipe e receba um atendimento consultivo. Vamos entender a necessidade do seu negócio e indicar o melhor caminho.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <Button asChild className="bg-blue-600 hover:bg-blue-500 text-white">
+                  <Button asChild className="bg-cyan-600 hover:bg-cyan-500 text-white">
                     <a href="https://wa.me/92991825422" target="_blank" rel="noreferrer">
                       Conversar no WhatsApp
                     </a>
