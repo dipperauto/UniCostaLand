@@ -7,7 +7,7 @@ import InteractiveDollarField from "./InteractiveDollarField";
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-24 md:pt-28 bg-gradient-to-b from-[#0a0f1f] via-[#0b1228] to-[#0c1a36] overflow-visible">
+    <section className="relative pt-24 md:pt-28 bg-transparent overflow-visible">
       {/* Mar de '$' interativo no fundo, estendido 30vh para baixo */}
       <div
         className="absolute inset-x-0 top-0 z-0 pointer-events-none"
