@@ -52,12 +52,12 @@ const Hero: React.FC = () => {
           </div>
 
           <Reveal delay={150}>
-            <div className="relative">
-              <div className="aspect-[4/3] rounded-xl bg-[#0e162a] shadow-sm border border-slate-800 overflow-hidden">
+            <div className="relative flex justify-center">
+              <div className="w-full max-w-[300px] md:max-w-[360px] aspect-square rounded-xl bg-[#0e162a] shadow-sm border border-slate-800 overflow-hidden">
                 <img
                   src="/unicosta-hero.jpeg"
                   alt="Marca UniCosta"
-                  className="object-contain w-full h-full p-6"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="pointer-events-none absolute -inset-6 -z-10 rounded-2xl bg-blue-500/10 blur-3xl"></div>
