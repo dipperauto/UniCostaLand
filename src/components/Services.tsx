@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
-import { Card, CardHeader, CardTitle, CardContent } from "../components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 import { Building2, FilePlus2, ClipboardList, Calculator, FileText, ShieldCheck } from "lucide-react";
+import Reveal from "./Reveal";
 
 const items = [
   {
@@ -39,34 +40,36 @@ const items = [
 
 const Services: React.FC = () => {
   return (
-    <section id="servicos" className="py-16 md:py-20 bg-white">
+    <section id="servicos" className="py-16 md:py-20 bg-transparent">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-end justify-between mb-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">Serviços</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold text-white">Serviços</h2>
           <a
             href="https://wa.me/92991825422"
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-blue-600 hover:text-blue-700"
+            className="text-sm text-sky-400 hover:text-sky-300"
           >
             Falar com especialista
           </a>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((it) => {
+          {items.map((it, idx) => {
             const Icon = it.icon;
             return (
-              <Card key={it.title} className="border-gray-200 hover:shadow-sm transition-shadow">
-                <CardHeader className="flex flex-row items-center gap-3">
-                  <div className="p-2 rounded-md bg-blue-50 text-blue-700">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <CardTitle className="text-lg">{it.title}</CardTitle>
-                </CardHeader>
-                <CardContent className="text-sm text-gray-700">
-                  {it.desc}
-                </CardContent>
-              </Card>
+              <Reveal key={it.title} delay={idx * 80}>
+                <Card className="border-slate-800 bg-[#0e162a] hover:border-slate-700 hover:shadow-[0_0_0_1px_rgba(59,130,246,0.4)] transition-all group">
+                  <CardHeader className="flex flex-row items-center gap-3">
+                    <div className="p-2 rounded-md bg-blue-900/30 text-sky-400">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <CardTitle className="text-lg text-white">{it.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm text-slate-300">
+                    {it.desc}
+                  </CardContent>
+                </Card>
+              </Reveal>
             );
           })}
         </div>

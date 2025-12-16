@@ -12,7 +12,10 @@ import Footer from "../components/Footer";
 
 const Index: React.FC = () => {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="relative min-h-screen bg-gradient-to-b from-[#070b14] via-[#0b1220] to-[#0d1630] text-slate-100">
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-20 h-64 w-64 -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
+      </div>
       <Header />
       <main>
         <Hero />
